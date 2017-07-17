@@ -131,14 +131,8 @@ $(document).ready(function () {
 
       stage.addChild(assets.startMessage);
 
-      let start = setInterval(function () {
-        stage.update();
-      }, 100);
-
-      $('body').keydown(function (event) {
-        let key = event.which;
+      assets.startMessage.addEventListener('mousedown', function (event) {
         stage.removeChild(assets.startMessage);
-        stage.update();
         showLevel(level);
         $('body').off();
         $('#mobile-canvas').css({ 'background': 'none' });
@@ -148,18 +142,18 @@ $(document).ready(function () {
     function inGame(level, speed) {
 
       let pianoOverlays = {
-        o_c: new createjs.Graphics().beginFill("white").drawRect(0,CANVAS.height - 135, 61, 135),
-        o_d: new createjs.Graphics().beginFill("white").drawRect(61,CANVAS.height - 135, 61, 135),
-        o_e: new createjs.Graphics().beginFill("white").drawRect(61 * 2,CANVAS.height - 135, 61, 135),
-        o_f: new createjs.Graphics().beginFill("white").drawRect(61 * 3,CANVAS.height - 135, 61, 135),
-        o_g: new createjs.Graphics().beginFill("white").drawRect(61 * 4,CANVAS.height - 135, 61, 135),
-        o_a: new createjs.Graphics().beginFill("white").drawRect(61 * 5,CANVAS.height - 135, 61, 135),
-        o_b: new createjs.Graphics().beginFill("white").drawRect(61 * 6,CANVAS.height - 135, 61, 135),
-        o_C: new createjs.Graphics().beginFill("white").drawRect(61 * 7,CANVAS.height - 135, 61, 135),
-        o_d1: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 229, CANVAS.height - 129, 103, 56),
-        o_d2: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 229, CANVAS.height - 60, 103, 56),
-        o_d3: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 113, CANVAS.height - 129, 103, 56),
-        o_d4: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 113, CANVAS.height - 60, 103, 56)
+        o_c: new createjs.Graphics().beginFill("white").drawRect(0,CANVAS.height - 100, 61, 135),
+        o_d: new createjs.Graphics().beginFill("white").drawRect(61,CANVAS.height - 100, 61, 135),
+        o_e: new createjs.Graphics().beginFill("white").drawRect(61 * 2,CANVAS.height - 100, 61, 135),
+        o_f: new createjs.Graphics().beginFill("white").drawRect(61 * 3,CANVAS.height - 100, 61, 135),
+        o_g: new createjs.Graphics().beginFill("white").drawRect(61 * 4,CANVAS.height - 100, 61, 135),
+        o_a: new createjs.Graphics().beginFill("white").drawRect(61 * 5,CANVAS.height - 100, 61, 135),
+        o_b: new createjs.Graphics().beginFill("white").drawRect(61 * 6,CANVAS.height - 100, 61, 135),
+        o_C: new createjs.Graphics().beginFill("white").drawRect(61 * 7,CANVAS.height - 100, 61, 135),
+        o_d1: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 172, CANVAS.height - 96, 103, 56),
+        o_d2: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 172, CANVAS.height - 30, 103, 56),
+        o_d3: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 59, CANVAS.height - 96, 103, 56),
+        o_d4: new createjs.Graphics().beginFill("white").drawRect(CANVAS.width - 59, CANVAS.height - 30, 103, 56)
       }
 
       let pianoOShapes =
