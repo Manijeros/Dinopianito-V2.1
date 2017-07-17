@@ -1,0 +1,46 @@
+@import '_reset.styl'
+@import '_variables.styl'
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+@font-face {
+  font-family: arcadeRound;
+  src: url('assets/fonts/04B_30__.TTF')
+}
+
+html
+  body
+    height 100vh
+    background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAAPklEQVQoU2P8f/z2fwYCgHEoKPoY1s/Av6oQxSsoDocpQFcIV4QugcwHK8JmBcg+mDjjB9ms/+huQHYQSCEA4QE7IW3G5NsAAAAASUVORK5CYII=')
+    margin 0
+    padding 0
+    overflow hidden
+    max-width 732px
+    main
+      #main
+        width 100vw
+        height 100vh
+        text-align center
+        .title-container
+          width 100%
+          img
+            margin-top 20px
+            max-width 600px
+            min-width 400px
+            width 80%
+        h1
+          font-size 3em
+          color white
+          font-family 'Raleway'
+          font-weight 200
+          text-shadow 0px 1px 1px rgba(0, 0, 0, 0.5);
+        .canvas-container
+          width 100%
+          canvas
+            display inline
+            border darken(pink, 50%) 4px solid
+            width 100vw
+        .fb-share-button, .fb-like
+          margin 0px 10px
+        #ml-button
+          position relative
+          bottom 5px

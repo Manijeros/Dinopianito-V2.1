@@ -1,0 +1,42 @@
+{
+  "name": "Dinopianito",
+  "version": "2.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 3000"
+  },
+  "author": "Guido La Rosa",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "buffer": "^5.0.6",
+    "del": "^3.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-google": "^0.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "merge": "^1.2.0",
+    "pug": "^2.0.0-beta6",
+    "rename": "^1.0.4",
+    "source": "0.0.3",
+    "stylus": "^0.54.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  }
+}
