@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "python -m SimpleHTTPServer 3000"
+    "start": "python -m SimpleHTTPServer 3000",
+    "build": "gulp"
   },
   "author": "Guido La Rosa",
   "license": "ISC",
